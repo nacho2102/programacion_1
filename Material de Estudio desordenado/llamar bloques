@@ -1,0 +1,46 @@
+# from matematica.aritmetica import *
+# from matematica.calculo import *
+
+# print(sumar(2,5))
+# print(potencia(2,5))
+
+
+'''from matematica import aritmetica
+from matematica import calculo
+
+
+print(aritmetica.sumar(2,5))
+print(calculo.potencia(2,5))
+
+'''
+
+'''import matematica.aritmetica'''
+
+'''print(matematica.aritmetica.sumar(2,5))'''
+
+'''from matematica.aritmetica import 
+from matematica.calculo import *'''
+
+
+
+#print(potencia(2,16))
+
+'''print(sumar(2,5))
+print(restar(2,5))
+print(multiplicar(2,5))
+print(potencia(2,5))
+
+'''
+'''from aritmetica import sumar, restar
+
+#print(potencia(2,16))
+
+print(sumar(2,5))
+print(restar(2,5))'''
+
+'''import aritmetica
+
+#print(potencia(2,16))
+
+print(aritmetica.sumar(2,5))
+print(aritmetica.restar(2,5))'''

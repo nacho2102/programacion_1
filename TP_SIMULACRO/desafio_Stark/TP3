@@ -1,0 +1,20 @@
+# A. Normalizar datos (No se debe poder acceder a los otros puntos)
+# B. Recorrer la lista imprimiendo por consola el nombre de cada superhéroe de
+# género NB
+# C. Recorrer la lista y determinar cuál es el superhéroe más alto de género F
+# D. Recorrer la lista y determinar cuál es el superhéroe más alto de género M
+# E. Recorrer la lista y determinar cuál es el superhéroe más débil de género M
+# F. Recorrer la lista y determinar cuál es el superhéroe más débil de género NB
+# G. Recorrer la lista y determinar la fuerza promedio de los superhéroes de
+# género NB
+# H. Determinar cuántos superhéroes tienen cada tipo de color de ojos.
+# I. Determinar cuántos superhéroes tienen cada tipo de color de pelo.
+# J. Listar todos los superhéroes agrupados por color de ojos.
+# K. Listar todos los superhéroes agrupados por tipo de inteligencia
+
+
+from data_Stark_3 import lista_personajes
+from stark_biblioteca import *
+
+
+stark_marvel_app( lista_personajes )
