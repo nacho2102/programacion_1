@@ -134,13 +134,6 @@ def alta_datos(archivo_cargado):
     archivo_cargado.append(nuevo_pasajero)
     return archivo_cargado
 
-def alta(archivo_cargado, archivo_json):
-    data = {"pasajeros": archivo_cargado}
-    with open (archivo_json, "w") as archivo:
-        json.dump(data, archivo, indent=4, ensure_ascii=False )
-
-
-
 '''C – Modificar datos: Listar nuevo_id y nombre de todos pasajes, luego buscarlo por nuevo_id y realizar la modificación del DNI, apellido y nombre o la fecha (Realizar un submenú => “ej: Ingrese nuevo_id, tipo y dato a modificar”).'''
 
 def listar_registro_id_nombre(archivo_cargado):
@@ -192,6 +185,7 @@ def baja_datos(archivo_cargado):
 """E – Listar todos los pasajes cuyo encabezado deberá ser formateado de la siguiente manera: Fecha | Aerolínea | Clase | Origen | Destino | Precio | DNI | Apellido y nombre."""
 
 def listar_registro_completo(archivo_cargado):
+
     print("    Fecha   | Aerolinea  |   Clase    |   Origen   |  Destino   |   Precio   |    DNI     | Apellido y nombre")
     keys = ["Fecha", "Aerolinea", "Clase", "Origen", "Destino", "Precio", "DNI_Pasajero", "Apellido_Nombre_Pasajero"]
     lista_datos = []
@@ -222,3 +216,9 @@ def listar_registro_completo(archivo_cargado):
         mensaje += f"{lista_datos[7]}"
         print(mensaje)
         lista_datos.clear()
+
+"""F - Salir"""
+def alta(archivo_cargado, archivo_json):
+    data = {"pasajeros": archivo_cargado}
+    with open (archivo_json, "w") as archivo:
+        json.dump(data, archivo, indent=4, ensure_ascii=False )

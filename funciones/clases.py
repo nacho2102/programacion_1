@@ -1,7 +1,5 @@
-
-
-class Personaje_principal:
-    tipo = 'Personaje_principal'
+class Clase: #-> Nombre de la clase
+    tipo = 'Descripcion' # -> Descripcion de la clase
     def __init__(self, id, nombre, apellido, edad, cantidad, nacionalidad = 'Argentina') -> None:
         self.id = id
         self.__nombre = nombre
