@@ -84,10 +84,7 @@ def validar_str(variable:str)->bool:
     Returns:
         bool: True si la cadena de caracteres contiene solo letras. False de lo contrario.
     """    
-    if len(variable) > 30:
-        retorno = False 
-    else:   
-        for letra in variable:
+    for letra in variable:
             if letra == " " or letra.isalpha():
                 retorno = True
             else:
