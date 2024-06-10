@@ -91,3 +91,12 @@ def validar_str(variable:str)->bool:
                 retorno = False
                 break
     return retorno
+
+def validar_int_float(variable:str)->bool:
+    for i in variable:
+        if i == "." or i.isnumeric():
+            retorno = True
+        else:
+            retorno = False
+            break
+    return retorno

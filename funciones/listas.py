@@ -155,9 +155,9 @@ def matriz_ordenada (matriz:list, criterio:str = "ASC")-> list:# -> Devuelve la 
     return matriz# -> Devuelve la matriz
 
 def max_min_matriz(matriz:list, criterio:str = "MAX")-> list:# -> Devuelve el valor maximo o minimo de una matriz
-    matriz = matriz_ordenada(matriz)
-    i_num = True
-    i_alpha = True
+    matriz = matriz_ordenada(matriz)# -> Llama a la funcion matriz_ordenada para ordenar la matriz
+    i_num = True# -> Variables que indican si es el primer valor de la lista o si el valor de la lista en i es mayor o menor que el valor de la variable max_min_num
+    i_alpha = True# -> Variables que indican si es el primer valor de la lista o si el valor de la lista en i es mayor o menor que el valor de la variable max_min_num
     for i in range(len(matriz)):# -> Itera en la cantidad de elementos que tiene la lista
         for j in range(len(matriz[i])):# -> Itera en la cantidad de elementos que tiene la lista en i
             if type(matriz[i][j]) == type(int()) or type(matriz[i][j]) == type(float()):# -> Compara el tipo de dato de la lista en i en j sea INT o FLOAT
@@ -169,9 +169,4 @@ def max_min_matriz(matriz:list, criterio:str = "MAX")-> list:# -> Devuelve el va
                     max_min_alpha = matriz[i][j]# -> Guarda el valor de la lista en i en j en la variable max_min_alpha
                     i_alpha = False# -> Cambia el valor de la variable i_alpha a False
     return max_min_num, max_min_alpha# -> Devuelve el valor maximo o minimo de la matriz
-
-
-                                    
-
-    
 
