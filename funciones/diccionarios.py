@@ -62,9 +62,9 @@ def modificar_key_lista_diccionarios (lista:list, key:str, value:str) -> list:# 
         diccionario[key] = value# -> Modifica la clave del diccionario con el valor
     return lista# -> Retorna la lista
 
-def modificar_key_lista_diccionarios_especifico (lista:list, key_modificar:str, value_modificar:str, value_criterio:str) -> list:
-    for diccionario in lista:
-        for key in diccionario.keys():
-            if diccionario[key] == value_criterio:
-                diccionario[key_modificar] = value_modificar
+def modificar_key_lista_diccionarios_especifico (lista:list, key_modificar:str, value_modificar:str, value_criterio:str) -> list:# -> Recibe una lista de diccionarios, una clave y un valor y modifica la clave con el valor
+    for diccionario in lista:# -> Recorre la lista de diccionarios
+        for key in diccionario.keys():# -> Recorre la clave del diccionario
+            if diccionario[key] == value_criterio:# -> Compara si el valor es igual al valor pasado
+                diccionario[key_modificar] = value_modificar# -> Modifica la clave del diccionario con el valor
     return lista

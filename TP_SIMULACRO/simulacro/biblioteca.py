@@ -54,6 +54,7 @@ def aeropuerto_app(archivo_json):
                 case _:
                     print("Opcion invalida")
             pausa()
+            
 '''A – Cargar el archivo data.json.'''
 def cargar_archivo(archivo_json:json, key):
     with open(archivo_json, "r") as archivo:
