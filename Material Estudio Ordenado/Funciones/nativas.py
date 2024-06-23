@@ -1,3 +1,7 @@
+#input() -> Permite que el usuario ingrese un valor
+variable = input("Ingresa un valor:")
+print(variable)# -> "VALOR INGRESADO"
+
 #print() -> Imprime en pantalla
 print("Hola Mundo")
 
