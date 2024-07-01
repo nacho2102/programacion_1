@@ -34,4 +34,4 @@ Fecha: 11/06/2024
 Asignatura: Programacion I
 Instancia: Primer Examen Parcial
 '''
-aeropuerto_app('C:/Users/nacho/OneDrive/Escritorio/Facultad/1er Cuatrimestre/Programacion 1/TP_SIMULACRO/Parcial_1/data.json')
+aeropuerto_app('C:/Users/nacho/OneDrive/Escritorio/Facultad/1er Cuatrimestre/Programacion 1/Facultad/simulacro/test1234.json')

@@ -16,7 +16,7 @@ def menu_principal():
     retorno = False
     imprimir_menu()
     opcion = input("Ingresa una opcion: ")
-    if opcion.upper() >= "A" and opcion.upper() <= "F":
+    if opcion.upper() >= "A" and opcion.upper() <= "G":
         retorno = opcion.upper()
     return retorno
 
@@ -24,7 +24,7 @@ def sub_menu():
     retorno = False
     imprimir_menu()
     opcion = input("Ingresa una opcion: ")
-    if opcion.upper() >= "A" and opcion.upper() <= "F":
+    if opcion.upper() >= "A" and opcion.upper() <= "G":
         retorno = opcion.upper()
     return retorno
 
