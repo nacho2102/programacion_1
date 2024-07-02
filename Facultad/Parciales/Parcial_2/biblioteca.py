@@ -332,7 +332,7 @@ def menu_principal(idioma):
 
 def juego(idioma):
     fondo_musica = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Musica\cherryblossom.mp3")
-    fondo_musica.set_volume(1.0)
+    fondo_musica.set_volume(0.7)
     fondo_musica.play(-1)
     jugar = True
     archivo = cargar_archivo(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\datos.json", 'ahorcado')
@@ -399,32 +399,32 @@ def juego(idioma):
                             match(contador):
                                 case 1:
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\latido.mp3")
-                                    error_sonido.set_volume(0.4)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play(-1)
                                 case 2:
                                     error_sonido.stop()
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\latido_2.mp3")
-                                    error_sonido.set_volume(0.5)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play(-1)
                                 case 3:
                                     error_sonido.stop()
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\latido_3.mp3")
-                                    error_sonido.set_volume(0.6)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play(-1)
                                 case 4:
                                     error_sonido.stop()
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\latido_4.mp3")
-                                    error_sonido.set_volume(0.7)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play(-1)
                                 case 5:
                                     error_sonido.stop()
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\latido_5.mp3")
-                                    error_sonido.set_volume(0.8)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play(-1)
                                 case 6:
                                     error_sonido.stop()
                                     error_sonido = pygame.mixer.Sound(r"C:\Users\nacho\OneDrive\Escritorio\Facultad\1er Cuatrimestre\Programacion 1\Facultad\Parciales\Parcial_2\sonidos\Efectos\Juego\game_over.mp3")
-                                    error_sonido.set_volume(0.9)
+                                    error_sonido.set_volume(1.0)
                                     error_sonido.play()
                                     retorno = "Perdiste"
                                     juego = False
@@ -435,6 +435,9 @@ def juego(idioma):
                             juego = False
                 pygame.display.flip()
             if retorno == "Menu":
+                fondo_musica.stop()
+                if contador != 0:
+                    error_sonido.stop()
                 jugar = False
             elif retorno == "Perdiste":
                 print("Perdiste")
@@ -450,7 +453,8 @@ def juego(idioma):
                 fondo_musica.stop()
                 jugar = False
             elif retorno == "Siguiente":
-                error_sonido.stop()
+                if contador != 0:
+                    error_sonido.stop()
                 puntaje_total += puntaje
                 pass
             elif retorno == "Salir":                   
