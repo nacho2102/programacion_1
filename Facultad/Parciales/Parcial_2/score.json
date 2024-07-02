@@ -39,6 +39,10 @@
         {
             "nombre": "maku",
             "puntaje": 10
+        },
+        {
+            "nombre": "agus",
+            "puntaje": 8
         }
     ]
 }

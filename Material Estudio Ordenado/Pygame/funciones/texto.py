@@ -13,5 +13,7 @@ while running: # -> Cuerpo del bucle
     for event in pygame.event.get(): # -> Cuerpo del bucle para eventos
         if event.type == pygame.QUIT: # -> Si el evento es de cerrar la ventana
             running = False # -> Se detiene el bucle
+        if event.type == pygame.KEYDOWN : # -> Si el evento es de pulsar una tecla
+            print(pygame.key.name(event.key))
     pygame.display.flip() # -> Actualiza la ventana
 pygame.quit() # Fin
